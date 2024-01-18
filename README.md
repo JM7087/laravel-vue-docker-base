@@ -2,7 +2,7 @@
 ## Passo a passo para rodar o projeto
 
 ```sh
-cd laravel-10-base/
+cd laravel-vue-docker/
 ```
 
 
@@ -37,7 +37,9 @@ REDIS_PORT=6379
 Suba os containers do projeto
 ```sh
 docker-compose build
+```
 
+```sh
 docker-compose up -d
 ```
 
@@ -51,11 +53,17 @@ docker-compose exec app bash
 Instale as dependências do projeto
 ```sh
 composer install
+```
 
+```sh
 composer require laravel/ui
+```
 
+```sh
 npm install --save vue@next && npm install --save-dev vue-loader@next
+```
 
+```sh
 npm install && npm run dev
 
 ```
